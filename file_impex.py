@@ -10,7 +10,7 @@ def load_urls_from_csv(filepath, encoding='UTF-8'):
     wait_for_file_to_exist(filepath)
     with open(filepath, newline='', encoding=encoding) as input_file:
         lines = input_file.readlines()
-        return [line.strip() for line in lines]
+        return list(set([line.strip() for line in lines]))
 
 
 def wait_for_file_to_exist(filepath, seconds=30):

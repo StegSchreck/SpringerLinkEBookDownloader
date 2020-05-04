@@ -18,7 +18,7 @@ class SpringerLink:
         self.browser = self.browser_handler.browser
 
     def download_ebooks(self, urls):
-        sys.stdout.write('      {count} URLs found\r'.format(count=len(urls)))
+        sys.stdout.write('      {count} URLs found to be handled\r\n'.format(count=len(urls)))
         sys.stdout.flush()
         for url in urls:
             if not self.args or not self.args.verbose or self.args.verbose < 1:
