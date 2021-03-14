@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/StegSchreck/SpringerLinkEBookDownloader/master/SpringerLinkEBookDownloader.png" width="300px">
+</p>
+
+
 # Springer Link eBook Downloader
 This script takes a list of URLs of Springer Link pages and automatically downloads both the PDF and the EPUB version
 (if available) for a free book. If the book is not for free, it will be ignored.
